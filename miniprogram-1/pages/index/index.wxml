@@ -1,0 +1,18 @@
+<view class="circle">
+  <view class="circle" animation="{{animationData}}" style="-webkit-transform: rotate(22.5deg);transform: rotate(-22.5deg)">
+    <view wx:for="{{List}}" wx:key="unique" class="table-item">
+      <view class="table-item-text" style="-webkit-transform: rotate({{item.deg}});transform: rotate({{item.deg}})">
+        {{item.name}}
+      </view>
+    </view>
+  </view>
+  <view class="start1" >
+      <view class="start2" bind:tap="go">
+      <text>开始</text>
+      <view class="Triangle"></view>
+      </view>
+    </view>
+</view>
+<input type="text" value="{{content}}" bindinput="onInput" class="want"  maxlength="20" placeholder="请输入你想算什么（如：事业、学业等）"/>
+<button bind:tap="go">{{start}}</button>
+<button wx:if="{{display}}" bindtap="toAskDS" style="top:25px">询问AI</button>

@@ -1,0 +1,28 @@
+<view class="column">
+  <view style="margin-bottom: 112rpx;">
+    <block wx:for="{{messages}}" wx:key="index">
+      <!-- 用户 -->
+      <view wx:if="{{item.role=='user'}}" class="row row-reverse">
+        <image src="/picture/user.png" class="picture" />
+        <view class="userTextBox">
+          <text class="text-center">{{item.content}}</text>
+        </view>
+
+      </view>
+      <!-- AI -->
+      <view class="row" wx:else>
+        <image src="/picture/system.png" class="picture" />
+        <view class="systemTextBox">
+          <text user-select space='nbsp' class="text-center">{{item.content}}</text>
+        </view>
+      </view>
+
+    </block>
+  </view>
+
+
+  <view class="chat-container">
+    <textarea value="{{input}}" class="input" auto-height bindinput="onInput" placeholder="请输入你想向AI询问的内容" />
+    <view><button class="submit" size="mini" bindtap="start">发送</button></view>
+  </view>
+</view>

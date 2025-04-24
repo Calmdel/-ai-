@@ -1,0 +1,86 @@
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.picture {
+  width: 100rpx;
+  height: 100rpx;
+  align-self: start;
+  border-radius: 50%;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 20rpx;
+  min-height: 50px;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.head-left {
+  margin-left: 20rpx;
+}
+
+.head-right {
+  margin-right: 20rpx;
+}
+
+.text-center {
+  line-height: 45rpx;
+  max-width: max-content;
+}
+
+.userTextBox {
+  background-color: #1E90FF;
+  max-width: 50%;
+  border-radius: 15rpx;
+  padding: 5px;
+  margin: auto;
+  margin-right: 40rpx;
+  display: block;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+}
+
+.systemTextBox {
+  background-color: #1E90FF;
+  max-width: 50%;
+  border-radius: 15rpx;
+  padding: 5px;
+  margin: auto;
+  margin-left: 40rpx;
+  display: block;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: 0;
+  padding: 16rpx;
+  background-color: rgba(247, 247, 247, 1);
+}
+
+.input {
+  flex: 1;
+  margin: 0 10rpx 0 10rpx;
+  border-radius: 10rpx;
+  background-color: #ffffff;
+  min-height: 60rpx;
+  max-height: 250rpx;
+}
+
+.submit {
+  font-weight: normal;
+  font-size: 15px;
+  background-color: #07c160;
+  color: white;
+  margin-left: 20rpx;
+}
