@@ -16,4 +16,5 @@
 
 三、视频演示
 https://github.com/user-attachments/assets/49b68064-ce4e-4ffc-83d8-2e9d70f811eb
+https://github.com/Calmdel/wxminiprogram-carouse_ai/issues/1#issue-3186228850
 
